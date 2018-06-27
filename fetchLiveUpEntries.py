@@ -81,7 +81,7 @@ if not creds or creds.invalid:
     flow = client.flow_from_clientsecrets(sys.argv[2], SCOPES) #'client_secret.json'
     creds = tools.run_flow(flow, store)
 service = build('gmail', 'v1', http=creds.authorize(Http()))
-listOfMessage = ListMessagesMatchingQuery(service, "me", "subject:daily-grab")
+listOfMessage = ListMessagesMatchingQuery(service, "me", sys.argv[3])
 
 for msg in listOfMessage:
     print(msg['id'])

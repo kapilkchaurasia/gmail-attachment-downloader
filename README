@@ -1,2 +1,2 @@
 1. Follow the step1 of https://developers.google.com/gmail/api/quickstart/python
-2. To Execute: python fetchLiveUpEntries.py $OUTPUT_FILE_LOCATION $LOCATION_CLIENT_SECRET.json
+2. To Execute: python fetchLiveUpEntries.py $OUTPUT_FILE_LOCATION $LOCATION_CLIENT_SECRET.json $email_subject
