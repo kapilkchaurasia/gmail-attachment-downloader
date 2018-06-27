@@ -85,6 +85,6 @@ listOfMessage = ListMessagesMatchingQuery(service, "me", "subject:daily-grab")
 
 for msg in listOfMessage:
     print(msg['id'])
-    GetAttachments(service, "me", msg['id'], sys.argv[1] ) #"/Users/kapil.chaurasia/grabproject/pyemail"
+    GetAttachments(service, "me", msg['id'], sys.argv[1] )
 
 # Call the Gmail API
